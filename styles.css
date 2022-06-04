@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  font-family: "Poppins", sans-serif;
+
+  color: var(--color-text);
+  background-color: #3a3845;
+}
+
+:root {
+  --color-primary: #ff6b6b;
+  --color-white: #fff;
+  --color-text: #1b1a17;
+}
+
+/* General */
+
+.heading-1 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  text-transform: none;
+
+  color: var(--color-white);
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  outline: none;
+  border: none;
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+  background-color:#eb2c2c;
+
+  transform: translateY(1px);
+}
+
+.btn:active {
+  transform: translateY(2px);
+
+  background-color: #eb2c2c;
+}
+
+/* Main */
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80rem;
+  height: 40rem;
+
+  /* background-color: var(--color-white); */
+}
+
+.btns-container {
+  width: 100%;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.gallery-container {
+  width: 100%;
+  height: 100%;
+
+  margin-top: 0.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem;
+
+  transition: all .2s linear;
+}
+
+.gallery {
+  width: 100%;
+
+  /* overflow: visible;
+  opacity: 1; */
+  
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem;
+
+  transition: all .2s linear;
+}
+
+.gallery-img-container {
+  width: 12rem;
+  height: 12rem;
+
+  border-radius: 4px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+/* Dynamic Classes */
+
+.hide {
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.btn.active{
+  background-color: #eb2c2c;
+}
